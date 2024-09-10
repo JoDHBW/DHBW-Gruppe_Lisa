@@ -15,6 +15,6 @@ public class Jv65Person
 		gebdatum = gd;
 		matrikelnummer = m;
 
-		joa, funktioniert der merge?
+		ja der funktionier
 	} // Konstruktor
 } // class
