@@ -14,5 +14,7 @@ public class Jv65Person
 		geschlecht = g;
 		gebdatum = gd;
 		matrikelnummer = m;
+
+		joa, funktioniert der merge?
 	} // Konstruktor
 } // class
