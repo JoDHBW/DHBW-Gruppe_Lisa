@@ -8,11 +8,5 @@ public class Jv65Person
 	public GregorianCalendar gebdatum;
 	public int matrikelnummer;
 	
-	public Jv65Person (String n, String v, char g, GregorianCalendar gd, int m)
-	{	nachname = n;
-		vorname = v;
-		geschlecht = g;
-		gebdatum = gd;
-		matrikelnummer = m;
-	} // Konstruktor
+	
 } // class
