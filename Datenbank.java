@@ -24,11 +24,13 @@ public class Datenbank {
         }
     }
 
-    public void addMitarbeiter(String name) throws SQLException {
-        String query = "INSERT INTO mitarbeiter (vorname, nachname, email, passwort_hash, sprache, wochenstunden, gleitzeit_warnung_grenze) VALUES(\"" + name + "\" 'jojo2', 'jasmin.mustermann@bbq.com', 'hashed_passwort_2', 'DE', '40', 10.00) ";
+   public void addMitarbeiter(String vorname, String nachname, String email, String passwortHash, String sprache, int wochenstunden, double gleitzeitWarnungGrenze) throws SQLException {
+    String query = "INSERT INTO mitarbeiter (vorname, nachname, email, passwort_hash, sprache, wochenstunden, gleitzeit_warnung_grenze) " +
+                   "VALUES(\"" + vorname + "\", \"" + nachname + "\", \"" + email + "\", \"" + passwortHash + "\", \"" + sprache + "\", " + wochenstunden + ", " + gleitzeitWarnungGrenze + ")";
 
-        statement.execute(query);
-    }
+    statement.execute(query);
+}
+
 
     public void addArbeitszeit(int mitarbeiterId, String datum, String arbeitsbeginn, String arbeitsende, boolean istUeberzeit) throws SQLException {
         String query = "INSERT INTO arbeitszeiten (mitarbeiter_id, datum, arbeitsbeginn, arbeitsende, ist_ueberzeit) " +
